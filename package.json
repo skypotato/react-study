@@ -3,9 +3,27 @@
   "version": "1.0.0",
   "description": "study react",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "keywords": [
     "react"
@@ -13,7 +31,9 @@
   "author": "skypotato",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "3.1.1"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6"
